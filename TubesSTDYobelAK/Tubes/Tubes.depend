@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1702289810 source:c:\c++\tp3\tp_mod_8\tubes\tubes\main.cpp
+	<iostream>
+
+1704637271 source:c:\users\lenovo\onedrive\documents\desktop\new folder (2)\tubes\tubes\main.cpp
+	<iostream>
+	"header.h"
+
+1704637499 source:c:\users\lenovo\onedrive\documents\desktop\new folder (2)\tubes\tubes\source.cpp
+	"header.h"
+	<iostream>
+
+1704636770 c:\users\lenovo\onedrive\documents\desktop\new folder (2)\tubes\tubes\header.h
+	<iostream>
+
