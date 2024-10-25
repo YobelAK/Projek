@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Honkai Star Rail</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    
+    html, body {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+    }
+    .card {
+      background-color: silver;
+      padding: 10px;
+    }
+    .card .card-body {
+      background-color: white;
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+    body {
+      background-color: #f8f9fa;
+      background-image: url(bg.jpg);
+    }
+
+    .footer {
+      background-color: #343a40;
+      color: white;
+      height: 100px;
+      width: 100%;
+      
+      bottom: 0;
+      
+      
+      text-align: center;
+      
+    }
+    .header h1{
+      background-color: #343a40;
+      color: white;
+      padding: 10px 0;
+      text-align: center;
+      
+    }
+    
+    
+    
+    .navbar {
+      background-color: #007bff;
+    }
+
+    .navbar a {
+      color: white;
+    }
+
+    .sidebar-left, .sidebar-right {
+      background-color: #e9ecef;
+      padding: 20px;
+      min-height: 100vh;
+    }
+
+    .content {
+      background-color: white;
+      
+      padding: 20px;
+      flex: 1;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    
+    .container-fluid {
+      flex: 1;
+    }
+
+   
+    
+    .sidebar-left h4,.sidebar-right h4 {
+      font-weight: bold;
+      color: #007bff;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    .sidebar-left ul,.sidebar-right ul{
+      list-style: none;
+      padding: 0;
+    }
+    .sidebar-right li {
+      margin-bottom: 15px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 18px;
+    }
+    .sidebar-left li {
+      margin-bottom: 15px;
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .sidebar-left li:hover,.sidebar-right li:hover {
+      color: red;
+      cursor: pointer;
+    }
+
+    .sidebar-left img,.sidebar-right img {
+      width: 100%;
+      height: 230px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      transition: transform 0.3s ease;
+    }
+
+    .sidebar-left img:hover,.sidebar-right img:hover{
+      transform: scale(1.05);
+    }
+
+
+    
+    @media (max-width: 768px) {
+      .sidebar-left, .sidebar-right {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+
+  <img src="https://fastcdn.hoyoverse.com/mi18n/hkrpg_global/m20240924hy3a4qvwn4/upload/ed9e4c7f0f21c0e5df5d3050f7bbb304_7702924208981023272.png?" style="width: 200px; height: 200px;">
+    
+  
+  <header class="header">
+    
+    <h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Honkai Star Rail</h1>
+
+  </header>
+
+  
+  <nav class="nav nav-pills mb-3" id="pills-tab" style="background-color: silver;padding-left: 5px;">
+    <li class="nav-item">
+      <a class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" href="#pills-home" style="font-weight: bold;" >About Us</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" href="#pills-profile" style="font-weight: bold;" >New Character</a>
+    </li>
+    
+  </nav>
+
+  <div class="tab-content container-fluid" id="pills-tabContent">
+    
+    <div class="tab-pane fade show active" id="pills-home" >
+      <div class="row">
+        
+        <aside class="col-md-2 sidebar-left">
+          <h4>Recent Character</h4>
+          <ul class="list-unstyled">
+            <li>
+              <img src="lingsha.jpg" alt="Lingsha" style="width: 100%; height: auto;">
+              <span>Lingsha</span>
+            </li>
+            <li>
+              <img src="fei.jpg" alt="Feixiao" style="width: 100%; height: auto;">
+              <span>Feixiao</span>
+            </li>
+            <li>
+              <img src="sparkle.jpg" alt="Sparkle" style="width: 100%; height: auto;">
+              <span>Sparkle</span>
+            </li>
+            <li>
+              <img src="jq.png" alt="Jiaoqiu" style="width: 100%; height: auto;">
+              <span>Jiaoqiu</span>
+            </li>
+            <li>
+              <img src="yunl.jpg" alt="Yunli" style="width: 100%; height: auto;">
+              <span>Yunli</span>
+            </li>
+            <li>
+              <img src="huohuo.png" alt="Huohuo" style="width: 100%; height: auto;">
+              <span>Huohuo</span>
+            </li>
+            <li>
+              <img src="argenti.jpg" alt="Argenti" style="width: 100%; height: auto;">
+              <span>Argenti</span>
+            </li>
+            <li>
+              <img src="jade.jpg" alt="Jade" style="width: 100%; height: auto;">
+              <span>Jade</span>
+            </li>
+          </ul>
+        </aside>
+
+        
+        <main class="col-md-8 content">
+          <h1 style="margin-bottom: 30px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Honkai Star Rail</h1>
+          <p style="font-size: 18px;"><b>Honkai: Star Rail is a turn-based space fantasy RPG </b>developed and published by HoYoverse for PC, PS5, and iOS/Android platforms. Come aboard with us on the Astral Express, Trailblazers!</p>
+          <iframe width="100%" height="500" src="https://www.youtube.com/embed/vcTV5EVeVrc"  allowfullscreen></iframe>
+  
+          <br><br>
+          <p style="font-size: 18px;"><b>Honkai: Star Rail </b>shares many similarities with its predecessor, Genshin Impact. For instance, each version lasts for six weeks, there are always two phases of the version, where each lasts for three weeks. When the three-week timer is over, players will see a change in the featured Warp Banner. </p>
+          <p style="font-size: 18px;">Therefore, when a banner drops, Trailblazers have that much time to grind the game for every drop of Stellar Jade.Players who are interested in knowing who's currently featured on the Warp Banner, who will be in the next banner, and who has been featured in the past banner, can check out this article. This piece also includes a complete Honkai: Star Rail banner history.</p>
+          
+          <br><br>
+          <h4 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">2.6 (Phase 1) RAPPA</h4>
+          <img src="banner.avif" alt="">
+          <br><br>
+          <p style="font-size: 18px;">The current banners in Honkai: Star Rail 2.6 are Rappa (Imaginary - Erudition) .</p>
+          <br><br>
+          
+          <h4 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">2.6 (Phase 2) DAN HENG *IMBIBITOR LUNAE</h4>
+          <img src="il.avif" alt="">
+          <br><br>
+          <p style="font-size: 18px;">The upcoming banners in Honkai: Star Rail 2.6 are Dan Heng *Imbibitor Lunae (Imaginary - Destruction) .</p>
+          <br>
+          
+          <center style="background-color: silver;">
+            <img src="https://fastcdn.hoyoverse.com/mi18n/hkrpg_global/m20240924hy3a4qvwn4/upload/ed9e4c7f0f21c0e5df5d3050f7bbb304_7702924208981023272.png?" >
+            <a href="https://hsr.hoyoverse.com" class="btn btn-primary btn-lg rounded-pill shadow"style="padding: 10px 40px;">Play</a>
+          </center>
+          <table border="1">
+            <h3>Contact Us!</h3>
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Name:</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+              </div>
+          
+            
+              <div class="text-end">
+                <button type="submit" class="btn btn-primary btn-lg rounded-pill shadow">Submit</button>
+              </div>
+            </form>
+          </table>
+          
+          
+          
+        </main>
+
+        
+        <aside class="col-md-2 sidebar-right">
+          <h4>Upcoming Character</h4>
+          <ul class="list-unstyled">
+            <li>
+              <img src="sunday.png" alt="Sunday" style="width: 100%; height: auto;">
+              <span>Sunday</span>
+            </li>
+            <li>
+              <img src="fugue.jpg" alt="Fugue" style="width: 100%; height: auto;">
+              <span>Fugue</span>
+            </li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+
+    
+    <div class="tab-pane fade" id="pills-profile">
+      <div class="row">
+        
+        <aside class="col-md-2 sidebar-left">
+          <h4>Recent Character</h4>
+          <ul class="list-unstyled">
+            <li>
+              <img src="lingsha.jpg" alt="Lingsha" style="width: 100%; height: auto;">
+              <span>Lingsha</span>
+            </li>
+            <li>
+              <img src="fei.jpg" alt="Feixiao" style="width: 100%; height: auto;">
+              <span>Feixiao</span>
+            </li>
+            <li>
+              <img src="sparkle.jpg" alt="Sparkle" style="width: 100%; height: auto;">
+              <span>Sparkle</span>
+            </li>
+            <li>
+              <img src="jq.png" alt="Jiaoqiu" style="width: 100%; height: auto;">
+              <span>Jiaoqiu</span>
+            </li>
+            <li>
+              <img src="yunl.jpg" alt="Yunli" style="width: 100%; height: auto;">
+              <span>Yunli</span>
+            </li>
+            <li>
+              <img src="huohuo.png" alt="Huohuo" style="width: 100%; height: auto;">
+              <span>Huohuo</span>
+            </li>
+            <li>
+              <img src="argenti.jpg" alt="Argenti" style="width: 100%; height: auto;">
+              <span>Argenti</span>
+            </li>
+            <li>
+              <img src="jade.jpg" alt="Jade" style="width: 100%; height: auto;">
+              <span>Jade</span>
+            </li>
+          </ul>
+        </aside>
+    
+        <main class="col-md-8 content" style="background-image: url(bg1.jpeg);">
+          <div style="background-color: rgba(255, 255, 255, 0.8); padding: 20px; border-radius: 10px;">
+            <div style="background-color: silver;padding: 10px;border-radius: 10px;">
+            <img src="rappa.jpg" alt="Profile Picture" class="rounded-circle mb-3" style="width: 200px; height: 200px;">
+            <img src="https://fastcdn.hoyoverse.com/mi18n/hkrpg_global/m20240924hy3a4qvwn4/upload/1867dbe4f5ca4f1cd1017d078df6dcdd_7634514493684875173.png?" alt="" style="width: 300px; height: auto;">
+            <p style="font-family: Arial, Helvetica, sans-serif;"><b>With stars above</b>, everywhere doth evil lurks! Under the witness of the solemn skyscraper, recite your final words ... *three gunshots*... The winner has been decided. My Cosmic ninjutsu methods are ever-changing. Better luck next time... in your next life</p>
+            <p style="font-weight: bold;">VA: Kendell Byrd</p>
+          </div>
+            
+            <br>
+            
+            <h2 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Recent Characters</h2>
+            <div class="row">
+              <div class="col-md-4 d-flex mb-4"> <!-- Added mb-4 -->
+                <div class="card" style="width: 100%;">
+                  <center>
+                    <img src="lingsha.jpg" alt="Lingsha" class="rounded-circle mb-3" style="object-fit: cover; height: 180px; width: 180px;">
+                  </center>
+                  <div class="card-body">
+                    <h5 class="card-title">Lingsha</h5>
+                    <p class="card-text">"I am a Vidyadhara, born and raised on the Luofu, and I once studied the healing arts under the name of 'Dan Zhu.' But my master became bogged down in politics and was banished to a place far from home. I followed her there. Now that I've changed my name and come home, many complicated feelings have returned."</p>
+                    <a href="#" class="btn btn-primary">Lingsha</a>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col-md-4 d-flex mb-4"> <!-- Added mb-4 -->
+                <div class="card" style="width: 100%;">
+                  <center>
+                    <img src="fei.jpg" alt="Feixiao" class="rounded-circle mb-3" style="object-fit: cover; height: 180px; width: 180px;">
+                  </center>
+                  <div class="card-body">
+                    <h5 class="card-title">Feixiao</h5>
+                    <p class="card-text">'The Merlin's Claw' is what's written in the books, and 'The Great General' is what people call me. The former sounds too formal, the latter too exaggerated. Neither suits me. I prefer my own title, the 'Lacking General' — lacking in worries, regrets, and rivals."</p>
+                    <a href="#" class="btn btn-primary">Feixiao</a>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col-md-4 d-flex mb-4"> <!-- Added mb-4 -->
+                <div class="card" style="width: 100%;">
+                  <center>
+                    <img src="sparkle.jpg" alt="Sparkle" class="rounded-circle mb-3" style="object-fit: cover; height: 180px; width: 180px;">
+                  </center>
+                  <div class="card-body">
+                    <h5 class="card-title">Sparkle</h5>
+                    <p class="card-text">"I'm not exactly a person loaded with cool skills, and dreaming big isn't really my thing. But, ya know, my latest thing is... getting myself into the Genius Society! Ha, I'm so ready to give it a go. Reckon anyone will buy it?"</p>
+                    <a href="#" class="btn btn-primary">Sparkle</a>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col-md-4 d-flex mb-4"> <!-- Added mb-4 -->
+                <div class="card" style="width: 100%;">
+                  <center>
+                    <img src="jq.png" alt="Jiaoqiu" class="rounded-circle mb-3" style="object-fit: cover; height: 180px; width: 180px;">
+                  </center>
+                  <div class="card-body">
+                    <h5 class="card-title">Jiaoqiu</h5>
+                    <p class="card-text">"No matter how many times I say it, people always forget — cooking is medicine, and making medicine is cooking. Using food to treat the sick is my specialty. As the saying goes, a chef who doesn't want to be a healer isn't worth his salt... or pepper, for that matter."</p>
+                    <a href="#" class="btn btn-primary">Jiaoqiu</a>
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Huohuo -->
+              <div class="col-md-4 d-flex mb-4"> <!-- Added mb-4 -->
+                <div class="card" style="width: 100%;">
+                  <center>
+                    <img src="huohuo.png" alt="Huohuo" class="rounded-circle mb-3" style="object-fit: cover; height: 180px; width: 180px;">
+                  </center>
+                  <div class="card-body">
+                    <h5 class="card-title">Huohuo</h5>
+                    <p class="card-text">"I can use this banner to dispel demons... but it also comes in handy when signaling my surrender..."</p>
+                    <a href="#" class="btn btn-primary">Huohuo</a>
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Argenti -->
+              <div class="col-md-4 d-flex mb-4"> <!-- Added mb-4 -->
+                <div class="card" style="width: 100%;">
+                  <center>
+                    <img src="argenti.jpg" alt="Argenti" class="rounded-circle mb-3" style="object-fit: cover; height: 180px; width: 180px;">
+                  </center>
+                  <div class="card-body">
+                    <h5 class="card-title">Argenti</h5>
+                    <p class="card-text">"May this rose convey my heartfelt salutations.</p>
+                    <a href="#" class="btn btn-primary">Argenti</a>
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Jade -->
+              <div class="col-md-4 d-flex mb-4"> <!-- Added mb-4 -->
+                <div class="card" style="width: 100%;">
+                  <center>
+                    <img src="jade.jpg" alt="Jade" class="rounded-circle mb-3" style="object-fit: cover; height: 180px; width: 180px;">
+                  </center>
+                  <div class="card-body">
+                    <h5 class="card-title">Jade</h5>
+                    <p class="card-text">"Wealth is the recipe to happiness. Giving it to those who desire happiness is making the best use of it. In this way, my job also brings people happiness. Anyone can receive this blessing... They only have to pay an equivalent price."</p>
+                    <a href="#" class="btn btn-primary">Jade</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h2 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Upcoming Characters</h2>
+            <div class="row">
+              <div class="col-md-4 d-flex mb-4"> <!-- Added mb-4 -->
+                <div class="card" style="width: 100%;">
+                  <center>
+                    <img src="sunday.png" alt="Lingsha" class="rounded-circle mb-3" style="object-fit: cover; height: 180px; width: 180px;">
+                  </center>
+                  <div class="card-body">
+                    <h5 class="card-title">Sunday</h5>
+                    <p class="card-text">"There's always a paradise that needs to be built. That vow is like the sun in the sky — perhaps I'll melt and fall before reaching it... But some hardships I must endure."</p>
+                    <a href="#" class="btn btn-primary">Lingsha</a>
+                  </div>
+                </div>
+              </div>
+
+
+                <div class="col-md-4 d-flex mb-4"> <!-- Added mb-4 -->
+                  <div class="card" style="width: 100%;">
+                    <center>
+                      <img src="fugue.jpg" alt="Feixiao" class="rounded-circle mb-3" style="object-fit: cover; height: 180px; width: 180px;">
+                    </center>
+                    <div class="card-body">
+                      <h5 class="card-title">Fugue</h5>
+                      <p class="card-text">"Benefactor, though the Cosmos stretches far and wide, and the stars fill the sky, as long as we hold each other in our thoughts, there will always be a chance for reunion."</p>
+                      <a href="#" class="btn btn-primary">Feixiao</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </main>
+        
+    
+        <aside class="col-md-2 sidebar-right">
+          <h4>Upcoming Character</h4>
+          <ul class="list-unstyled">
+            <li>
+              <img src="sunday.png" alt="Sunday" style="width: 100%; height: auto;">
+              <span>Sunday</span>
+            </li>
+            <li>
+              <img src="fugue.jpg" alt="Fugue" style="width: 100%; height: auto;">
+              <span>Fugue</span>
+            </li>
+          </ul>
+        </aside> 
+          
+      </div>
+    </div>
+    
+    </div>
+
+  </div>
+
+  
+  <footer class="footer mt-3">
+    <img src="hoyo.png" style="width: 200px;">
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  
+</body>
+</html>
